@@ -12,19 +12,19 @@
     "tail": "^0.4.0"
   },
   "devDependencies": {
-    "jasmine": "^2",
-    "eslint": "^4.0.0",
-    "eslint-config-semistandard": "^11.0.0",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-node": "^5.1.0",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1"
+    "eslint": "^6.3.0",
+    "eslint-config-semistandard": "^15.0.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.2.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "jasmine": "^3.4.0"
   },
   "scripts": {
     "test": "npm run jasmine",
-    "posttest": "npm run eslint",
-    "eslint": "eslint lib ./simctl.js",
+    "pretest": "npm run eslint",
+    "eslint": "eslint lib spec ./simctl.js",
     "jasmine": "jasmine --config=spec/support/jasmine.json"
   },
   "keywords": [
