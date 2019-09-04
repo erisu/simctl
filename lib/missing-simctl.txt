@@ -1,0 +1,5 @@
+simctl was not found.
+Check that you have Xcode 8.x installed:
+    xcodebuild --version
+Check that you have Xcode 8.x selected:
+    xcode-select --print-path
