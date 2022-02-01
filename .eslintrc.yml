@@ -1,5 +1,5 @@
 root: true
-extends: semistandard
+extends: standard
 rules:
   indent:
     - error
@@ -8,3 +8,10 @@ rules:
   padded-blocks: off
   operator-linebreak: off
   no-throw-literal: off
+
+  # We replicate the eslint-config-semistandard rules here instead of
+  # extending that config, since it is poorly maintained.
+  semi:
+    - 2
+    - always
+  no-extra-semi: 2
